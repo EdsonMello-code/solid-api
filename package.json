@@ -10,11 +10,15 @@
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "nodemailer": "^6.4.14",
+    "sqlite3": "^5.0.0",
+    "typeorm": "^0.2.28",
     "uuidv4": "^6.2.4"
   },
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch ./node_modules ./src/server.ts"
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch ./node_modules ./src/server.ts",
+    "typeorm": "tsnd ./node_modules/typeorm/cli.js"
   }
 }

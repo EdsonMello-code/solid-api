@@ -1,7 +1,6 @@
 interface IAddress {
   email: string;
   name: string;
-
 }
 export interface IMessage {
   to: IAddress;

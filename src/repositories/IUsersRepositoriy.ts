@@ -5,4 +5,6 @@ export default interface IUsersRepository {
   findByEmail(email: string): Promise<User>;
   // eslint-disable-next-line no-unused-vars
   save(user: User): Promise<void>;
+  
+  find?: () => Promise<User[]>
 };
